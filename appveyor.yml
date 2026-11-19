@@ -1,0 +1,12 @@
+image: Visual Studio 2022
+
+platform: Win32
+configuration: Release
+
+build:
+  project: AnchoTexto.vcxproj
+  verbosity: minimal
+
+artifacts:
+  - path: Release\AnchoTexto.dll
+    name: AnchoTexto

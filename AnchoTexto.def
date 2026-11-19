@@ -1,0 +1,3 @@
+LIBRARY "AnchoTexto"
+EXPORTS
+    BM_AnchoTexto=_BM_AnchoTexto@20
