@@ -9,7 +9,7 @@
 extern "C" __declspec(dllexport) int WINAPI BM_AnchoTexto(
     LPCSTR texto,
     LPCSTR fuente,
-    int    tamaño,
+    int    tamano,
     LPCSTR estilo,
     BOOL   cursiva)
 {
@@ -32,7 +32,7 @@ extern "C" __declspec(dllexport) int WINAPI BM_AnchoTexto(
     if (!hdc) return 0;
 
     int logPixSy = GetDeviceCaps(hdc, LOGPIXELSY);
-    int lfHeight = -MulDiv(tamaño > 0 ? tamaño : 10, logPixSy, 72);
+    int lfHeight = -MulDiv(tamano > 0 ? tamano : 10, logPixSy, 72);
 
     HFONT hFont = CreateFontA(
         lfHeight, 0, 0, 0,
